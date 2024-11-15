@@ -215,11 +215,11 @@ def main():
             time.sleep(2)
             winning_president = game.iloc[0,3]
 
-        #image_filename = f"{winning_president}.png"
+        image_filename = f"{winning_president}.png"
         
-        #col1, col2 = st.columns(2)
-        #col1.image(Image.open(image_filename), use_column_width=True)
-        #col2.image("winners_crown.jpg", use_column_width=True)
+        col1, col2 = st.columns(2)
+        col1.image(Image.open(image_filename), use_column_width=True)
+        col2.image("winners_crown.jpg", use_column_width=True)
         # Display images in each column
         #col1.image("usflag.jpg", use_column_width=True)
         #col2.image("state_image.png", use_column_width=True)
